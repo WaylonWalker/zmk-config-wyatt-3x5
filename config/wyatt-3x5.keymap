@@ -61,9 +61,17 @@
         default_layer {
             label = "Default";
             bindings = <
-&kp ESC    &kp Q  &kp W  &kp E  &kp BACKSPACE
+&to 1      &kp Q  &kp W  &kp E  &kp BACKSPACE
 &kp LSHFT  &kp A  &kp S  &kp D  &kp F
 &kp LCTRL  &kp Z  &kp X  &kp C  &kp SPACE
+            >;
+        };
+
+        layer_1 {
+            bindings = <
+&kp Q  &kp W  &kp E  &kp R  &kp T
+&kp A  &kp S  &kp D  &kp F  &kp G
+&kp Z  &kp X  &kp C  &kp V  &kp B
             >;
         };
     };
