@@ -1,0 +1,12 @@
+if SHIELD_wyatt-3x5
+
+config ZMK_KEYBOARD_NAME
+    default "wyatt-3x5"
+
+config USB_DEVICE_MANUFACTURER
+    default "Tickle My Keys"
+
+config ZMK_MOUSE
+    default y
+
+endif
