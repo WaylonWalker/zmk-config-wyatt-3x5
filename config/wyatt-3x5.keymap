@@ -54,6 +54,15 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        BOOT {
+            bindings = <&bootloader>;
+            key-positions = <0 1>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
         label = "wyatt-3x5";
