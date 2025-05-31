@@ -61,6 +61,11 @@
             bindings = <&bootloader>;
             key-positions = <0 1>;
         };
+
+        L1 {
+            bindings = <&lt 1 A>;
+            key-positions = <10 11>;
+        };
     };
 
     keymap {
@@ -73,6 +78,14 @@
 &kp ESC    &kp Q  &kp W  &kp E  &kp BACKSPACE
 &kp LSHFT  &kp A  &kp S  &kp D  &kp F
 &kp LCTRL  &kp Z  &kp X  &kp C  &kp SPACE
+            >;
+        };
+
+        layer_1 {
+            bindings = <
+&kp M      &kp I  &trans  &trans  &trans
+&kp P      &kp Q  &kp W   &trans  &kp T
+&kp ENTER  &kp A  &kp S   &kp D   &trans
             >;
         };
     };
