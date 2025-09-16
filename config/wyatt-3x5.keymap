@@ -2,55 +2,12 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
-    behaviors {
-        gaming_active: gaming_active {
-            compatible = "zmk,behavior-tap-dance";
-            label = "GAMING_ACTIVE";
-            #binding-cells = <0>;
-            bindings = <&kp Q>, <&kp Q>, <&to 0>;
-        };
+    combos {
+        compatible = "zmk,combos";
 
-        gaming_deactive: gaming_deactive {
-            compatible = "zmk,behavior-tap-dance";
-            label = "GAMING_DEACTIVE";
-            #binding-cells = <0>;
-            bindings = <&kp RIGHT_SHIFT>, <&to 0>;
-        };
-
-        hm: homerow_mods {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HOMEROW_MODS";
-            bindings = <&kp>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <150>;
-            flavor = "tap-preferred";
-        };
-
-        hl: homerow_layer {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HOMEROW_LAYER";
-            bindings = <&mo>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <150>;
-            flavor = "tap-preferred";
-        };
-    };
-
-    macros {
-        vim___0: vim___0 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp END &kp ENTER>;
-            label = "vim___0";
-        };
-
-        vim___w: vim___w {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&none>;
-            label = "VIM___W";
+        two-hand-hold-down-bootloader {
+            bindings = <&bootloader>;
+            key-positions = <0 10 4 14>;
         };
     };
 
@@ -61,9 +18,9 @@
         default_layer {
             label = "Default";
             bindings = <
-&kp ESC    &kp Q  &kp W  &kp E  &kp R
-&kp LSHFT  &kp A  &kp S  &kp D  &kp F
-&kp LCTRL  &kp Z  &kp X  &kp C  &kp SPACE
+&kp A  &trans          &kp GRAVE  &trans            &kp D
+&kp W  &kp X           &kp M      &trans            &kp S
+&kp Q  &kp LEFT_SHIFT  &kp J      &kp LEFT_CONTROL  &kp SPACE
             >;
         };
     };
