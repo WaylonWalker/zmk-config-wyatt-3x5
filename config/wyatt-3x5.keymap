@@ -84,7 +84,7 @@
 
         layer_1 {
             bindings = <
-&kp M      &kp I  &trans  &tog 2  &trans
+&kp M      &kp I  &tog 3  &tog 2  &trans
 &kp P      &kp Q  &kp W   &trans  &kp T
 &kp ENTER  &kp A  &kp S   &kp D   &trans
             >;
