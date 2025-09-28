@@ -84,7 +84,7 @@
 
         layer_1 {
             bindings = <
-&kp M      &kp I  &tog 3  &tog 2  &trans
+&kp M      &kp I  &tog 3  &tog 2  &tog 4
 &kp P      &kp Q  &kp W   &trans  &kp T
 &kp ENTER  &kp A  &kp S   &kp D   &trans
             >;
@@ -103,6 +103,14 @@
 &kp W    &kp SPACE        &kp E           &mmv MOVE_UP    &kp A
 &kp D    &mmv MOVE_LEFT   &kp Q           &mmv MOVE_DOWN  &kp D
 &kp ESC  &mmv MOVE_RIGHT  &kp LEFT_SHIFT  &mkp LCLK       &mkp RCLK
+            >;
+        };
+
+        music {
+            bindings = <
+&kp Q   &kp W      &kp E   &kp R   &kp ESC
+&kp A   &kp S      &kp D   &kp F   &kp TAB
+&kp N5  &kp SPACE  &trans  &trans  &trans
             >;
         };
     };
