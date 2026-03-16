@@ -18,9 +18,9 @@
         default_layer {
             label = "Default";
             bindings = <
-&kp A  &trans          &kp GRAVE  &trans            &kp W
-&kp D  &kp X           &kp M      &trans            &kp S
-&kp Q  &kp LEFT_SHIFT  &kp J      &kp LEFT_CONTROL  &kp SPACE
+&kp A  &trans          &kp GRAVE         &trans            &kp W
+&kp D  &kp X           &kp M             &trans            &kp S
+&kp Q  &kp LEFT_SHIFT  &kp LG(NUMBER_1)  &kp LEFT_CONTROL  &kp SPACE
             >;
         };
     };
