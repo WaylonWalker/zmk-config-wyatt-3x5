@@ -6,7 +6,4 @@ config ZMK_KEYBOARD_NAME
 config USB_DEVICE_MANUFACTURER
     default "Tickle My Keys"
 
-config ZMK_MOUSE
-    default y
-
 endif

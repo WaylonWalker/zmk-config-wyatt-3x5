@@ -39,7 +39,7 @@
 
         out_usb {
             bindings = <&out OUT_USB>;
-            key-positions = <9 14 4 9 14>;
+            key-positions = <4 9 14>;
         };
 
         k_pp {
