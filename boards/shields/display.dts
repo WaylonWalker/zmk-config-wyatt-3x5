@@ -1,0 +1,19 @@
+&i2c1 {
+    status = "okay";
+    sda-pin = <&gpio0 20>;  // Your SDA pin
+    scl-pin = <&gpio0 17>;  // Your SCL pin
+};
+
+&i2c1 {
+    ssd1306@3c {
+        compatible = "solomon,ssd1306fb-i2c";
+        reg = <0x3c>;
+        label = "SSD1306";
+        width = <128>;
+        height = <64>;
+        segment-offset = <0>;
+        row-offset = <0>;
+        pages = <8>;
+        reset-gpios = <&gpio0 22 GPIO_ACTIVE_LOW>;  // Adjust based on your wiring
+    };
+};
